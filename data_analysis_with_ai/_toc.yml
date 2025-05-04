@@ -34,3 +34,22 @@ parts:
         title: "Lesson 5 - Descriptive Data Analysis (DDA)"
       - file: Classes/02-Data-Description-and-Preparation/2.6-AI-Enhanced-DDA.md
         title: "Lesson 6 - AI-Enhanced DDA"
+
+  - caption: "Class 3: Data Visualization"
+    chapters:
+      - file: Classes/03-Data-Visualization/3.1-Distribution.md
+        title: "Lesson 1 - Distribution"
+      - file: Classes/03-Data-Visualization/3.2-Associations.md
+        title: "Lesson 2 - Associations"
+      - file: Classes/03-Data-Visualization/3.3-Amounts.md
+        title: "Lesson 3 - Amounts"
+      - file: Classes/03-Data-Visualization/3.4-Proportions.md
+        title: "Lesson 4 - Proportions"
+      - file: Classes/03-Data-Visualization/3.5-Evolution-and-Flow.md
+        title: "Lesson 5 - Evolution and Flow"
+      - file: Classes/03-Data-Visualization/3.6-Geospatial.md
+        title: "Lesson 6 - Geospatial"
+      - file: Classes/03-Data-Visualization/3.7-AI-Enhanced-Dataviz.md
+        title: "Lesson 7 - AI-Enhanced Dataviz"
+      - file: Classes/03-Data-Visualization/3.8-Design-Principles-for-Dataviz.md
+        title: "Lesson 8 - Design Principles for Dataviz"
