@@ -2,8 +2,20 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+root: intro.md
+
+parts:
+  - caption: "Class 1: Introduction to Data Analysis with AI"
+    chapters:
+      - file: Classes/01-Introduction-to-Data-Analysis-with-AI/1.1-AI-and-AI-Enhanced-Data-Analysis.md
+        title: "AI and AI-Enhanced Data Analysis"
+      - file: Classes/01-Introduction-to-Data-Analysis-with-AI/1.2-AI-Tools-to-be-Explored.md
+        title: "AI Tools to be Explored"
+      - file: Classes/01-Introduction-to-Data-Analysis-with-AI/1.3-Introduction-to-Data-Analysis.md
+        title: "Introduction to Data Analysis"
+      - file: Classes/01-Introduction-to-Data-Analysis-with-AI/1.4-Careers-in-Data-Science.md
+        title: "Careers in Data Science"
+      - file: Classes/01-Introduction-to-Data-Analysis-with-AI/1.5-From-Bad-to-Good-Practices.md
+        title: "From Bad to Good Practices"
+      - file: Classes/01-Introduction-to-Data-Analysis-with-AI/1.6-Introduction-to-Prompt-Engineering.md
+        title: "Introduction to Prompt Engineering"
