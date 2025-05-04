@@ -18,7 +18,7 @@ parts:
       - file: Classes/01-Introduction-to-Data-Analysis-with-AI/1.5-From-Bad-to-Good-Practices.md
         title: "From Bad to Good Practices"
       - file: Classes/01-Introduction-to-Data-Analysis-with-AI/1.6-Introduction-to-Prompt-Engineering.md
-        title: "Introduction to Prompt Engineering"
+        title: Introduction to Prompt Engineering
 
   - caption: "Class 2: Data Description and Preparation"
     chapters:
@@ -33,7 +33,7 @@ parts:
       - file: Classes/02-Data-Description-and-Preparation/2.5-Descriptive-Data-Analysis-DDA.md
         title: "Lesson 5 - Descriptive Data Analysis (DDA)"
       - file: Classes/02-Data-Description-and-Preparation/2.6-AI-Enhanced-DDA.md
-        title: "Lesson 6 - AI-Enhanced DDA"
+        title: Lesson 6 - AI-Enhanced DDA
 
   - caption: "Class 3: Data Visualization"
     chapters:
@@ -66,3 +66,12 @@ parts:
         title: "Lesson 4 - AI-Enhanced Dashboard Design"
       - file: Classes/04-Data-Storytelling-and-Dashboard-Design/4.5-Case-Studies.md
         title: "Lesson 5 - Case Studies"
+
+  - caption: "Class 5: Final Challenge"
+    chapters:
+      - file: Classes/05-Final-Challenge/5.1-Final-Challenge-Requirements.md
+        title: Lesson 5.1 - Final Challenge Requirements
+      - file: Classes/05-Final-Challenge/5.2-Learning-Objectives.md
+        title: Lesson 5.2 - Learning Objectives
+      - file: Classes/05-Final-Challenge/5.3-What-Can-You-Do-with-this-Knowledge.md
+        title: Lesson 5.3 - What Can You Do with this Knowledge?
