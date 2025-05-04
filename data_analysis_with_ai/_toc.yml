@@ -19,3 +19,18 @@ parts:
         title: "From Bad to Good Practices"
       - file: Classes/01-Introduction-to-Data-Analysis-with-AI/1.6-Introduction-to-Prompt-Engineering.md
         title: "Introduction to Prompt Engineering"
+
+  - caption: "Class 2: Data Description and Preparation"
+    chapters:
+      - file: Classes/02-Data-Description-and-Preparation/2.1-Data-Analysis-Workflow.md
+        title: "Lesson 1 - Data Analysis Workflow"
+      - file: Classes/02-Data-Description-and-Preparation/2.2-Data-Description.md
+        title: "Lesson 2 - Data Description"
+      - file: Classes/02-Data-Description-and-Preparation/2.3-Data-Preparation.md
+        title: "Lesson 3 - Data Preparation"
+      - file: Classes/02-Data-Description-and-Preparation/2.4-AI-Enhanced-Data-Preparation.md
+        title: "Lesson 4 - AI-Enhanced Data Preparation"
+      - file: Classes/02-Data-Description-and-Preparation/2.5-Descriptive-Data-Analysis-DDA.md
+        title: "Lesson 5 - Descriptive Data Analysis (DDA)"
+      - file: Classes/02-Data-Description-and-Preparation/2.6-AI-Enhanced-DDA.md
+        title: "Lesson 6 - AI-Enhanced DDA"
