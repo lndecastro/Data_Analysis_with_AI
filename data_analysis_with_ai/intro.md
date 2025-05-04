@@ -1,11 +1,16 @@
-# Welcome to your Jupyter Book
+# Dendritic Summer Academy — Data Analysis with AI
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+## Introduction
 
-Check out the content pages bundled with this sample book to see more.
+Welcome to the Data Analysis with AI course for the Dendritic Summer Academy 2025! This book was created to provide an online reference to simplify your experience.
 
-```{tableofcontents}
-```
+## Important Links
+
+- [Dendritic Website](https://www.fgcu.edu/eng/dendritic-institute/)
+
+## About the Author
+
+Dr. Leandro Nunes de Castro <br>
+AI and Data Science Professor & DENDRITIC Director <br>
+DENDRITIC: Human-Centered Artificial Intelligence and Data Science Institute <br>
+U.A. Whitaker College of Engineering & Lutgert College of Business<br>
