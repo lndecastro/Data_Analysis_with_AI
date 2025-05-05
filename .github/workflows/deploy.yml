@@ -25,7 +25,7 @@ jobs:
 
       - name: Build Jupyter Book
         run: |
-          jupyter-book build .
+          jupyter-book build data_analysis_with_ai
 
       - name: Deploy to GitHub Pages
         run: |
