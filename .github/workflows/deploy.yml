@@ -1,0 +1,32 @@
+name: Deploy Jupyter Book to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Change if your default branch is different
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install jupyter-book ghp-import
+
+      - name: Build Jupyter Book
+        run: |
+          jupyter-book build .
+
+      - name: Deploy to GitHub Pages
+        run: |
+          ghp-import -n -p -f _build/html
