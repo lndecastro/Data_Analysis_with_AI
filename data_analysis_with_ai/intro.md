@@ -2,8 +2,6 @@
 
 ## Introduction
 
-# This is just a test
-
 Welcome to the Data Analysis with AI course for the Dendritic Summer Academy 2025! This book was created to provide an online reference to simplify your experience.
 
 ## Important Links
