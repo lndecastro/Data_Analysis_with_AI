@@ -1,0 +1,15 @@
+# Table of Contents
+format: jb-book
+root: index
+
+chapters:
+  - file: class1
+    title: "Class 1: Introduction to Data Analysis, AI Tools, and Careers"
+  - file: class2
+    title: "Class 2: Data Analysis Workflow and Descriptive Analysis"
+  - file: class3
+    title: "Class 3: Data Visualization and Design Principles"
+  - file: class4
+    title: "Class 4: Data Storytelling and Dashboard Design"
+  - file: class5
+    title: "Class 5: Full Data Analysis Project with AI Integration"
