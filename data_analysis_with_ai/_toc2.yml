@@ -1,6 +1,7 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 
+
 format: jb-book
 root: intro.md
 
@@ -75,3 +76,4 @@ parts:
         title: Lesson 5.2 - Learning Objectives
       - file: Classes/05-Final-Challenge/5.3-What-Can-You-Do-with-this-Knowledge.md
         title: Lesson 5.3 - What Can You Do with this Knowledge?
+
