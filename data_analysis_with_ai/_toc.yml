@@ -2,6 +2,13 @@
 format: jb-book
 root: index
 
+parts:
+  - caption: "Class 1: Introduction to Data Analysis with AI"
+    chapter:
+      - file: Class1.md
+        title: "AI and AI-Enhanced Data Analysis"
+
+
 chapters:
   - file: class1
     title: "Class 1: Introduction to Data Analysis, AI Tools, and Careers"
