@@ -2,10 +2,6 @@
 format: jb-book
 root: index
 
-# Table of Contents
-format: jb-book
-root: index
-
 chapters:
   - file: class1
     title: "Class 1: Introduction to Data Analysis, AI Tools, and Careers"
