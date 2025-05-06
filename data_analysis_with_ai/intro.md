@@ -48,7 +48,7 @@ The training uses a diverse set of datasets to illustrate practical data analysi
 
 - **Car Evaluation Dataset**: Contains attributes such as buying price, maintenance cost, doors, seating capacity, trunk size, safety, and an overall acceptability class. Used for data description, tabular representation, and creating data dictionaries.
 - **Mammographic Masses Dataset**: Medical dataset with variables like BI-RADS assessment, patient age, mass shape, margin, density, and severity (benign or malignant). Used for handling missing values, sampling, and contingency analysis.
-- **Iris Dataset**: Classic dataset with sepal and petal measurements for three iris species. Demonstrates normalization and descriptive statistics.
+- **Iris Dataset**: Classic dataset with sepal and petal measurements for three iris species. Demonstrates normalization and descriptive statistics. [Download the Iris dataset](./iris.csv)
 - **Forest Fires Dataset**: Contains data on forest fires in Portugal, including location, date, meteorological indices, temperature, humidity, wind, rain, and area burned. Used for distribution analysis, frequency tables, and association measures.
 - **Gapminder Dataset**: Features global development indicators such as GDP per capita, life expectancy, and population for multiple countries over time. Commonly used to demonstrate time series analysis, multi-dimensional visualization, and global trend exploration.
 - **Superstore Sales Dataset**: Comprises transactional sales data from a retail superstore, including order details, customer demographics, product categories, sales, profit, and shipping information. Used to illustrate business analytics, dashboard creation, and data storytelling.
