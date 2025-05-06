@@ -2,28 +2,19 @@
 format: jb-book
 root: index
 
-parts:
-  - caption: "Class 1: Introduction to Data Analysis with AI"
-    chapters:
-      - file: Class1.md
-        title: "AI and AI-Enhanced Data Analysis"
+# Table of Contents
+format: jb-book
+root: index
 
-  - caption: "Class 2: Data Description and Preparation"
-    chapters:
-      - file: Class2.md
-        title: "Lesson 1 - Data Analysis Workflow"
+chapters:
+  - file: class1
+    title: "Class 1: Introduction to Data Analysis, AI Tools, and Careers"
+  - file: class2
+    title: "Class 2: Data Analysis Workflow and Descriptive Analysis"
+  - file: class3
+    title: "Class 3: Data Visualization and Design Principles"
+  - file: class4
+    title: "Class 4: Data Storytelling and Dashboard Design"
+  - file: class5
+    title: "Class 5: Full Data Analysis Project with AI Integration"
 
-  - caption: "Class 3: Data Visualization"
-    chapters:
-      - file: Class3.md
-        title: "Lesson 1 - Distribution"
-
-  - caption: "Class 4: Data Storytelling and Dashboard Design"
-    chapters:
-      - file: Class4.md
-        title: "Lesson 1 - Data Storytelling"
-
-  - caption: "Class 5: Final Challenge"
-    chapters:
-      - file: Classe5.md
-        title: Lesson 5.1 - Final Challenge Requirements
