@@ -3,14 +3,14 @@ format: jb-book
 root: index
 
 chapters:
-  - file: Class1
+  - file: Class1.md
     title: "Class 1: Introduction to Data Analysis, AI Tools, and Careers"
-  - file: Class2
+  - file: Class2.md
     title: "Class 2: Data Analysis Workflow and Descriptive Analysis"
-  - file: Class3
+  - file: Class3.md
     title: "Class 3: Data Visualization and Design Principles"
-  - file: Class4
+  - file: Class4.md
     title: "Class 4: Data Storytelling and Dashboard Design"
-  - file: Class5
+  - file: Class5.md
     title: "Class 5: Full Data Analysis Project with AI Integration"
 
