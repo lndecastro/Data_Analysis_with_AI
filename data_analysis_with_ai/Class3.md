@@ -2,6 +2,8 @@
 
 This class focuses on the visualization of data, covering distributions, associations, proportions, trends, and geospatial analysis. It introduces key design principles for effective data visualization and shows how AI can assist in creating impactful visual representations to uncover insights and communicate findings clearly.
 
+[Download the slide deck.](./DA2I_Class03_Dataviz.pdf)
+
 ## Hands-on activities and prompts:
 
 ### 1. Boxplot and Violin Plot with AI
