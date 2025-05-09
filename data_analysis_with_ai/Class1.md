@@ -3,6 +3,8 @@
 
 This class introduces the foundational concepts of data analysis and artificial intelligence, highlighting the main AI tools (ChatGPT, Claude.ai, Perplexity) that will be used throughout the course. It explores key careers in data science, essential terminology, and the principles of prompt engineering. The session also contrasts standard and AI-based approaches, emphasizing best practices for effective data analysis.
 
+[Download the slide deck.](./DA2I_Class01_Introduction.pdf)
+
 ## Hands-on activities and prompts:
 
 ### 1. Icebreaker with AI Insights
