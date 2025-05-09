@@ -2,6 +2,8 @@
 
 Class 4 is dedicated to the art of data storytelling and the design of dashboards. It uses case studies to illustrate how to craft compelling narratives from data and design dashboards that effectively communicate insights. The session highlights the role of AI in enhancing storytelling techniques and dashboard creation for business and organizational contexts.
 
+[Download the slide deck.](./DA2I_Class04_Storytelling_Dashboard.pdf)
+
 ## Hands-on activities and prompts:
 
 ### 1. Data Storytelling with AI
