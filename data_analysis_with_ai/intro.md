@@ -21,26 +21,31 @@ This training is structured into five classes, each building on the previous to 
 - Explores careers in data science, key terminologies, and principles of prompt engineering.
 - Discusses best practices in data analysis and the differences between standard and AI-based approaches.
 - Introduces the basics of prompt engineering.
+[Download the slide deck.](./DA2I_Class01_Introduction.pdf)
 
 ### Class 2: Data Analysis Workflow and Descriptive Data Analysis
 - Focuses on the data analysis workflow, including data description and preparation.
 - Introduces descriptive data analysis (DDA), covering how to summarize and characterize data using statistical methods.
 - Begins to integrate AI tools for data preparation and analysis.
+[Download the slide deck.](./DA2I_Class02_DD_DDA.pdf)
 
 ### Class 3: Data Visualization and Design Principles
 - Explores different types of data distributions, associations, proportions, and trends.
 - Introduces geospatial analysis and key design principles for effective data visualization.
 - Demonstrates how AI can enhance data visualization and support analysis.
+[Download the slide deck.](./DA2I_Class03_Dataviz.pdf)
 
 ### Class 4: Data Storytelling and Dashboard Design
 - Focuses on crafting compelling data stories and designing impactful dashboards.
 - Includes case studies to apply storytelling techniques and dashboard best practices.
 - Emphasizes the use of AI tools to enhance storytelling and dashboard creation.
+[Download the slide deck.](./DA2I_Class04_Storytelling_Dashboard.pdf)
 
 ### Class 5: Full Data Analysis Project with AI Integration
 - Culminates in a capstone project where participants apply the entire AI-augmented analysis workflow.
 - Covers project requirements, learning objectives, and integrates all skills learned throughout the course.
 - Encourages critical discussion on the limitations, ethics, and accuracy of AI-generated outputs.
+[Download the slide deck.](./DA2I_Class05_FinalClass.pdf)
 
 ## 1.2 Datasets Summary
 
