@@ -2,6 +2,8 @@
 
 Class 2 focuses on the overall workflow of data analysis, including data description and preparation. Participants learn about descriptive data analysis (DDA), which involves summarizing and characterizing datasets using statistical methods. The class also demonstrates how AI tools can support and enhance these early stages of the analysis process.
 
+[Download the slide deck.](./DA2I_Class02_DD_DDA.pdf)
+
 ## Hands-on activities and prompts:
 
 ### 1. Sampling with AI
