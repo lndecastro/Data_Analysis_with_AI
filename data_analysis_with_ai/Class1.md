@@ -9,14 +9,14 @@ This class introduces the foundational concepts of data analysis and artificial 
 
 ### 1. Icebreaker with AI Insights
 - For the mammographic_masses_nominal dataset, prompt AI as follows:
-
-  - “Here is a dataset of mammographies. Can you tell me 3 surprising insights?”
-
+```
+Here is a dataset of mammographies. Can you tell me 3 surprising insights?
+```
 - Which insights came from AI? Which are real? What’s your overall assessment of the result?
 
 ### 2. Analyzing Visuals with AI
 - [Download the image file](./Class01_FromGoodtoBadPractices_Pictures.png), use the AI tools to analyze the quality and choice of the visuals presented in the file. You may want to try Grok.com as well!
-
-  - “I want you to act as a data analyst and analyze the attached visuals in the search for improvements or better ways of visualizing the data.”
-
+```
+I want you to act as a data analyst and analyze the attached visuals in the search for improvements or better ways of visualizing the data.
+```
 - How do you compare the AI analysis with the one performed by your group?
