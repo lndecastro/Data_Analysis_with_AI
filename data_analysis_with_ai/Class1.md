@@ -15,7 +15,7 @@ This class introduces the foundational concepts of data analysis and artificial 
 - Which insights came from AI? Which are real? What’s your overall assessment of the result?
 
 ### 2. Analyzing Visuals with AI
-- For the image file `Class01_FromGoodtoBadPractices_Pictures.png`, use the AI tools to analyze the quality and choice of the visuals presented in the file. You may want to try Grok.com as well!
+- [For the image file](./Class01_FromGoodtoBadPractices_Pictures.png), use the AI tools to analyze the quality and choice of the visuals presented in the file. You may want to try Grok.com as well!
 
   - “I want you to act as a data analyst and analyze the attached visuals in the search for improvements or better ways of visualizing the data.”
 
