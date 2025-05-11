@@ -55,3 +55,7 @@ Create a Gantt chart for a hypothetical project on the building of a house
 ```
 Create some choropleth and bubble maps with the Gapminder dataset.
 ```
+
+## Want to compare with non-AI tools?
+If you want to contrast how to perform Data Visualization using a standard, non-AI tool, I invite you to watch my classes at the following link:  
+[Watch on YouTube](https://www.youtube.com/watch?v=Iid5_XFlSOU&list=PLDAcHI0EPlZJBPplCSQ3mNYwlJ4y8HraA&index=7)
