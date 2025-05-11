@@ -65,3 +65,7 @@ For the forestfires dataset, do:
     2) Plot the correlation matrix of all numeric variables.
     3) Plot the dispersion graphs of some pairs of numeric variables involving ‘temp’ and ‘ffmc’ with the best linear regressors showing their correlation trend.
 ```
+
+## Want to compare with non-AI tools?  
+If you want to contrast how to perform Exploratory Data Analysis (EDA) using a standard, non-AI tool, I invite you to watch my classes on **EDA with Excel** at the following link:  
+[Watch on YouTube](https://www.youtube.com/watch?v=zxFmJuPDWrs&list=PLDAcHI0EPlZIVv6xCs-ahKSVd7oLzmR-d&index=6)
