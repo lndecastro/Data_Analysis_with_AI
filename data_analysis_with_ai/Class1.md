@@ -5,6 +5,12 @@ This class introduces the foundational concepts of data analysis and artificial 
 
 [Download the slide deck.](./DA2I_Class01_Introduction.pdf)
 
+## Introduction to Prompt Engineering
+
+Prompt engineering is the practice of crafting effective inputs—called prompts—to guide artificial intelligence (AI) systems, particularly large language models (LLMs), toward generating accurate, relevant, and useful outputs. It involves understanding how these models interpret language and leveraging that knowledge to frame questions, instructions, or tasks in a way that optimizes the response. Prompt engineering is essential in domains ranging from data analysis and education to content creation and software development, as it bridges the gap between human intent and machine output. As AI systems become more capable, mastering prompt engineering becomes a critical skill for anyone looking to harness the full potential of generative AI.
+
+
+
 ## Hands-on activities and prompts:
 
 ### 1. Icebreaker with AI Insights
