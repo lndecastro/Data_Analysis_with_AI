@@ -11,12 +11,22 @@ Class 2 focuses on the overall workflow of data analysis, including data descrip
 
 Version 1:
 ```
+Generate a data dictionary including the variable name, its definition (meaning), the type of variable (numeric or nominal), and the number of missing values per variable.
+```
+Version 2:
+```
+Act as a data analyst. For a data dictionary containing the variable name, its definition (meaning), the type of variable (numeric or nominal), and the number of missing values per variable, create a data dictionary for the mammographic dataset.
+```
+
+Version 1:
+```
 Using a stratified sampling approach, sample 20% of the dataset. Assume variable ‘severity’ as the target variable.
 ```
 Version 2:
 ```
 Act as a data scientist. Using a stratified-sampling approach (by ‘severity’), sample 20% of the dataset so that each severity class is proportionally represented. Return the resulting subset as a new table.
 ```
+
 Version 1:
 ```
 Using a stratified sampling approach, sample 20% of the dataset. Assume variable ‘shape’ as the target variable.
