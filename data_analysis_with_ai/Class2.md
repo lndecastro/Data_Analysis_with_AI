@@ -6,7 +6,7 @@ Class 2 focuses on the overall workflow of data analysis, including data descrip
 
 ## Hands-on activities and prompts:
 
-### 1. Sampling with AI
+### 1. Data Dictionary and Sampling with AI
 - For the mammographic dataset, prompt:
 
 Version 1:
