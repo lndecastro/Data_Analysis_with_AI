@@ -37,7 +37,7 @@ Act as a data scientist. Using a stratified-sampling approach (by ‘Shape’), 
 ```
 - Analyze the results.
 
-### 2. Finding and Replacing Missing Values with AI
+### 2. Finding and Imputing Missing Values with AI
 - Open the mammographic_masses_nominal dataset using Excel.
 - Observe the missing values represented with ‘?’.
 - Apply filters in all variables to observe the missing values.
@@ -55,7 +55,7 @@ Act as a data analyst. In the mammographic dataset, identify all missing entries
 
 Version 1:
 ```
-Replace these missing values by a central tendency measure of the variable and save the dataset with the name mammographic_data_wo_missing_values.
+Impute these missing values by a central tendency measure of the variable and save the dataset with the name mammographic_data_wo_missing_values.
 ```
 Version 2:
 ```
