@@ -149,6 +149,6 @@ A world choropleth map of GDP per capita along the years.
 Bubble maps along the years, sizing bubbles by population and coloring by continent.
 ```
 
-## Want to compare with non-AI tools?
+## Do you want to compare with non-AI tools?
 If you want to contrast how to perform Data Visualization using a standard, non-AI tool, I invite you to watch my classes at the following link:  
 [Watch on YouTube](https://www.youtube.com/watch?v=Iid5_XFlSOU&list=PLDAcHI0EPlZJBPplCSQ3mNYwlJ4y8HraA&index=7)
