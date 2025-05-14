@@ -137,6 +137,6 @@ Act as a data scientist. Using the forestfires dataset:
 2. Plot a correlation matrix of all numeric variables.
 3. Calculate the best fitted linear regression for the pair (temp, FFMC) and draw scatter plots, displaying the correlation coefficient on each plot.
 ```
-## Want to compare with non-AI tools?  
+## Do you want to compare with non-AI tools?  
 If you want to contrast how to perform Exploratory Data Analysis (EDA) using a standard, non-AI tool, I invite you to watch my classes on **EDA with Excel** at the following link:  
 [Watch on YouTube](https://www.youtube.com/watch?v=zxFmJuPDWrs&list=PLDAcHI0EPlZIVv6xCs-ahKSVd7oLzmR-d&index=6)
