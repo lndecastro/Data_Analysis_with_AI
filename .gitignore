@@ -1,0 +1,17 @@
+# Ignore Jupyter Book build output
+*/_build/
+
+# Ignore Jupyter auto-checkpoints
+**/.ipynb_checkpoints/
+
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore temp/OS files
+.DS_Store
+Thumbs.db
+~$*
