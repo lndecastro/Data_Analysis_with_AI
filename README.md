@@ -1,2 +1,2 @@
 # Data Analysis with AI
-Jupyter Books for the Dendritic Summer Academy 2025
+Jupyter Book for the Dendritic Summer Academy 2025
