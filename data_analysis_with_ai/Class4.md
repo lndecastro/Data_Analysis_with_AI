@@ -6,7 +6,15 @@ Class 4 is dedicated to the art of data storytelling and the design of dashboard
 
 ## Hands-on activities and prompts:
 
-### 1. Data Storytelling with AI
+### 1. Data Storytelling with Human Intelligence (HI)
+
+Assuming that my data storytelling workflow is composed of the steps below, create a story around the Superstore Sales dataset.
+1) Define audience and purpose
+2) Identify key message and depth
+3) Perform EDA
+4) Prepare a compelling narrative
+
+### 2. Preliminary Analysis with AI
 
 Version 1:
 ```
@@ -19,7 +27,7 @@ Row ID, Order ID, Order Date, Ship Date, Ship Mode, Customer ID, Customer Name, 
 Identify the types of analyses I could perform on this data and the actionable insights that each might be expected to yield.
 ```
 
-### 2. Data Storytelling with AI
+### 3. Data Storytelling with AI
 
 Version 1:
 ```
