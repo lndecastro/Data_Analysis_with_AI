@@ -4,7 +4,13 @@ The final class is a capstone session where participants apply the entire AI-aug
 
 [Download the slide deck.](./DA2I_Class05_FinalClass.pdf)
 
-## 5.1 Small, LLM-Compatible Datasets for Data Analysis Projects
+## 5.1 Prompt Engineering: Advancing the Models
+
+This section explores the foundations and practical applications of prompt engineering in large language models (LLMs). It begins with a discussion on color and vectors to illustrate how LLMs conceptualize data, then delves into tokenization, transformers, self-attention, and the internal mechanics of how models "think". The session outlines key prompting strategies, such as few-shot prompting, chain-of-thought reasoning, role prompting, and retrieval-augmented generation (RAG), and emphasizes the importance of structure, position, and clarity in prompt design. It concludes by connecting prompt engineering to stages of AI-augmented data analysis, from preparation to storytelling and dashboard creation.
+
+
+
+## 5.2 Small, LLM-Compatible Datasets for Data Analysis Projects
 
 1. **Wine Quality**
 Data on physicochemical tests of red and white wine samples, with quality ratings.
@@ -66,7 +72,7 @@ Listings in New York City with price, neighborhood, and room type.
 Socio-economic indicators for countries: population, GDP, birthrate, etc.
 [Download CSV](https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv)
 
-## 5.2 Data Analysis Workflow Prompt Chain
+## 5.3 Data Analysis Workflow Prompt Chain
 
 ### Step 1: Data Description and Preparation
 
