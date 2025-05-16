@@ -4,7 +4,7 @@ The final class is a capstone session where participants apply the entire AI-aug
 
 [Download the slide deck.](./DA2I_Class05_FinalClass.pdf)
 
-## Small, LLM-Compatible Datasets for Data Analysis Projects
+## 5.1 Small, LLM-Compatible Datasets for Data Analysis Projects
 
 1. **Wine Quality**
 Data on physicochemical tests of red and white wine samples, with quality ratings.
@@ -74,7 +74,7 @@ Listings in New York City with price, neighborhood, and room type.
 Socio-economic indicators for countries: population, GDP, birthrate, etc.
 [Download CSV](https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv)
 
-## Data Analysis Workflow Prompt Chain
+## 5.2 Data Analysis Workflow Prompt Chain
 
 ### Step 1: Data Description and Preparation
 
