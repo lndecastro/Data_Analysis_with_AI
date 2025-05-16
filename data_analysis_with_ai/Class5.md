@@ -8,7 +8,7 @@ The final class is a capstone session where participants apply the entire AI-aug
 
 This section explores the foundations and practical applications of prompt engineering in large language models (LLMs). It begins with a discussion on color and vectors to illustrate how LLMs conceptualize data, then delves into tokenization, transformers, self-attention, and the internal mechanics of how models "think". The session outlines key prompting strategies, such as few-shot prompting, chain-of-thought reasoning, role prompting, and retrieval-augmented generation (RAG), and emphasizes the importance of structure, position, and clarity in prompt design. It concludes by connecting prompt engineering to stages of AI-augmented data analysis, from preparation to storytelling and dashboard creation.
 
-
+[Download the slide deck.](./DA2I_Class01_Prompt_Engineering_Day2.pdf)
 
 ## 5.2 Small, LLM-Compatible Datasets for Data Analysis Projects
 
