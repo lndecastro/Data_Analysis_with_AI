@@ -46,31 +46,23 @@ Summary of confirmed COVID-19 cases, deaths, and recoveries by country.
 Historic dataset of housing prices and neighborhood statistics.
 [Download CSV](https://raw.githubusercontent.com/selva86/datasets/master/BostonHousing.csv)
 
-11. **Loan Prediction**
-Loan application data used to predict loan approval.
-[Download CSV](https://raw.githubusercontent.com/dphi-official/Datasets/master/Loan_Data/loan_data.csv)
-
-12. **Fake vs Real News**
-A dataset containing labeled real and fake news articles.
-[Download CSV](https://raw.githubusercontent.com/clmentbisaillon/fake-and-real-news-dataset/master/data/fake.csv)
-
-13. **Employee Attrition**
+11. **Employee Attrition**
 HR analytics dataset to predict employee attrition.
 [Download CSV](https://raw.githubusercontent.com/IBM/employee-attrition-aif360/master/data/emp_attrition.csv)
 
-14. **Video Game Sales**
+12. **Video Game Sales**
 Global video game sales data by platform and publisher.
 [Download CSV](https://raw.githubusercontent.com/GregorUT/vgsales.com/master/vgsales.csv)
 
-15. **Netflix Titles**
+13. **Netflix Titles**
 Metadata of movies and TV shows available on Netflix.
 [Download CSV](https://raw.githubusercontent.com/sharmaroshan/Netflix-Datasets/main/netflix_titles.csv)
 
-16. **Airbnb NYC 2019**
+14. **Airbnb NYC 2019**
 Listings in New York City with price, neighborhood, and room type.
 [Download CSV](https://raw.githubusercontent.com/datasciencedojo/datasets/master/Airbnb%20NYC%202019.csv)
 
-17. **Countries of the World**
+15. **Countries of the World**
 Socio-economic indicators for countries: population, GDP, birthrate, etc.
 [Download CSV](https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv)
 
