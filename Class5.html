@@ -1,0 +1,689 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Class 5: Full Data Analysis Project with AI Integration &#8212; Data Analysis with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Class5';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Class 4: Data Storytelling and Dashboard Design" href="Class4.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Data Analysis with AI - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Data Analysis with AI - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Data Analysis with AI (DA2I)
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Class1.html">Class 1: Introduction to Data Analysis, AI Tools, and Careers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Class2.html">Class 2: Data Analysis Workflow and Descriptive Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Class3.html">Class 3: Data Visualization and Design Principles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Class4.html">Class 4: Data Storytelling and Dashboard Design</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Class 5: Full Data Analysis Project with AI Integration</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/data_analysis_summer_academy" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/data_analysis_summer_academy/edit/main/docs/Class5.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Class5.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Class 5: Full Data Analysis Project with AI Integration</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-engineering-advancing-the-models">5.1 Prompt Engineering: Advancing the Models</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#small-llm-compatible-datasets-for-data-analysis-projects">5.2 Small, LLM-Compatible Datasets for Data Analysis Projects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis-workflow-prompt-chain">5.3 Data Analysis Workflow Prompt Chain</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-data-description-and-preparation">Step 1: Data Description and Preparation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-descriptive-data-analysis">Step 2: Descriptive Data Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-data-visualization">Step 3: Data Visualization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-data-storytelling-narrative">Step 4: Data Storytelling (Narrative)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-dashboard-design">Step 5: Dashboard Design</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="class-5-full-data-analysis-project-with-ai-integration">
+<h1>Class 5: Full Data Analysis Project with AI Integration<a class="headerlink" href="#class-5-full-data-analysis-project-with-ai-integration" title="Link to this heading">#</a></h1>
+<p>The final class is a capstone session where participants apply the entire AI-augmented analysis workflow to a comprehensive project. This includes setting project requirements, defining learning objectives, and integrating all previously learned skills. The class also encourages discussion about the limitations, ethics, and accuracy of AI-generated outputs, ensuring a well-rounded understanding of AI in data analysis.</p>
+<p><a class="reference download internal" download="" href="_downloads/8ad3610e22feaffd7d25310b60cc54e7/DA2I_Class05_FinalClass.pdf"><span class="xref download myst">Download the slide deck.</span></a></p>
+<section id="prompt-engineering-advancing-the-models">
+<h2>5.1 Prompt Engineering: Advancing the Models<a class="headerlink" href="#prompt-engineering-advancing-the-models" title="Link to this heading">#</a></h2>
+<p>This section explores the foundations and practical applications of prompt engineering in large language models (LLMs). It begins with a discussion on color and vectors to illustrate how LLMs conceptualize data, then delves into tokenization, transformers, self-attention, and the internal mechanics of how models “think”. The session outlines key prompting strategies, such as few-shot prompting, chain-of-thought reasoning, role prompting, and retrieval-augmented generation (RAG), and emphasizes the importance of structure, position, and clarity in prompt design. It concludes by connecting prompt engineering to stages of AI-augmented data analysis, from preparation to storytelling and dashboard creation.</p>
+<p><a class="reference download internal" download="" href="_downloads/f30d1fa5b5abc793d64a5953df9f6f84/DA2I_Class01_Prompt_Engineering_Day2.pdf"><span class="xref download myst">Download the slide deck.</span></a></p>
+</section>
+<section id="small-llm-compatible-datasets-for-data-analysis-projects">
+<h2>5.2 Small, LLM-Compatible Datasets for Data Analysis Projects<a class="headerlink" href="#small-llm-compatible-datasets-for-data-analysis-projects" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Wine Quality</strong>
+Data on physicochemical tests of red and white wine samples, with quality ratings.
+<a class="reference external" href="https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv">Download CSV</a></p></li>
+<li><p><strong>Titanic Survivors</strong>
+Passenger data from the Titanic, used for survival prediction.
+<a class="reference external" href="https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv">Download CSV</a></p></li>
+<li><p><strong>Penguins Dataset</strong>
+Alternative to Iris; contains data on penguin species, island, bill length, etc.
+<a class="reference external" href="https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv">Download CSV</a></p></li>
+<li><p><strong>Heart Disease</strong>
+Medical attributes used to predict heart disease presence.
+<a class="reference external" href="https://raw.githubusercontent.com/datablist/sample-csv-files/main/files/people-heart.csv">Download CSV</a></p></li>
+<li><p><strong>Student Performance</strong>
+Grades and demographics of secondary school students in Portugal.
+<a class="reference external" href="https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip">Download CSV</a></p></li>
+<li><p><strong>Bank Marketing</strong>
+Data related to direct marketing campaigns of a Portuguese banking institution.
+<a class="reference external" href="https://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank.zip">Download CSV</a></p></li>
+<li><p><strong>Diabetes (Pima Indians)</strong>
+Medical data for predicting diabetes in Pima Indian women.
+<a class="reference external" href="https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv">Download CSV</a></p></li>
+<li><p><strong>Spotify Top Tracks</strong>
+Top Spotify songs with audio features and popularity scores.
+<a class="reference external" href="https://raw.githubusercontent.com/murpi/wilddata/master/spotify.csv">Download CSV</a></p></li>
+<li><p><strong>COVID-19 Cases by Country</strong>
+Summary of confirmed COVID-19 cases, deaths, and recoveries by country.
+<a class="reference external" href="https://raw.githubusercontent.com/datasets/covid-19/master/data/countries-aggregated.csv">Download CSV</a></p></li>
+<li><p><strong>Housing Prices (Boston)</strong>
+Historic dataset of housing prices and neighborhood statistics.
+<a class="reference external" href="https://raw.githubusercontent.com/selva86/datasets/master/BostonHousing.csv">Download CSV</a></p></li>
+<li><p><strong>Employee Attrition</strong>
+HR analytics dataset to predict employee attrition.
+<a class="reference external" href="https://raw.githubusercontent.com/IBM/employee-attrition-aif360/master/data/emp_attrition.csv">Download CSV</a></p></li>
+<li><p><strong>Video Game Sales</strong>
+Global video game sales data by platform and publisher.
+<a class="reference external" href="https://raw.githubusercontent.com/GregorUT/vgsales.com/master/vgsales.csv">Download CSV</a></p></li>
+<li><p><strong>Netflix Titles</strong>
+Metadata of movies and TV shows available on Netflix.
+<a class="reference external" href="https://raw.githubusercontent.com/sharmaroshan/Netflix-Datasets/main/netflix_titles.csv">Download CSV</a></p></li>
+<li><p><strong>Airbnb NYC 2019</strong>
+Listings in New York City with price, neighborhood, and room type.
+<a class="reference external" href="https://raw.githubusercontent.com/datasciencedojo/datasets/master/Airbnb%20NYC%202019.csv">Download CSV</a></p></li>
+<li><p><strong>Countries of the World</strong>
+Socio-economic indicators for countries: population, GDP, birthrate, etc.
+<a class="reference external" href="https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv">Download CSV</a></p></li>
+</ol>
+</section>
+<section id="data-analysis-workflow-prompt-chain">
+<h2>5.3 Data Analysis Workflow Prompt Chain<a class="headerlink" href="#data-analysis-workflow-prompt-chain" title="Link to this heading">#</a></h2>
+<section id="step-1-data-description-and-preparation">
+<h3>Step 1: Data Description and Preparation<a class="headerlink" href="#step-1-data-description-and-preparation" title="Link to this heading">#</a></h3>
+<p><strong>Prompt 1.1 – Data Dictionary</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">I</span> <span class="n">am</span> <span class="n">a</span> <span class="n">senior</span> <span class="n">data</span> <span class="n">analyst</span> <span class="n">responsible</span> <span class="k">for</span> <span class="n">running</span> <span class="n">a</span> <span class="n">full</span> <span class="n">data</span> <span class="n">analysis</span> <span class="n">project</span><span class="p">,</span> <span class="n">including</span> <span class="n">data</span> <span class="n">preparation</span><span class="p">,</span> <span class="n">descriptive</span> <span class="n">statistics</span><span class="p">,</span> <span class="n">data</span> <span class="n">visualization</span><span class="p">,</span> <span class="n">data</span> <span class="n">storytelling</span><span class="p">,</span> <span class="ow">and</span> <span class="n">dashboard</span> <span class="n">design</span><span class="o">.</span>
+<span class="n">I</span> <span class="n">uploaded</span> <span class="n">a</span> <span class="n">dataset</span><span class="p">,</span> <span class="n">please</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">data</span> <span class="n">dictionary</span> <span class="n">including</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Variable</span> <span class="n">name</span>
+<span class="o">-</span> <span class="n">Description</span> <span class="p">(</span><span class="n">infer</span> <span class="n">based</span> <span class="n">on</span> <span class="n">name</span> <span class="ow">or</span> <span class="n">dataset</span> <span class="n">metadata</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">Data</span> <span class="nb">type</span> <span class="p">(</span><span class="n">categorical</span> <span class="ow">or</span> <span class="n">numerical</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">Domain</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">numeric</span> <span class="nb">range</span><span class="p">,</span> <span class="n">category</span> <span class="n">values</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">Number</span> <span class="n">of</span> <span class="n">missing</span> <span class="n">values</span>
+
+<span class="n">Output</span> <span class="k">as</span> <span class="n">a</span> <span class="n">table</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt 1.2 – Data Cleaning and Preprocessing</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Perform</span> <span class="n">initial</span> <span class="n">data</span> <span class="n">preparation</span> <span class="n">steps</span> <span class="n">on</span> <span class="n">the</span> <span class="n">uploaded</span> <span class="n">dataset</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Show</span> <span class="n">summary</span> <span class="n">statistics</span> <span class="k">for</span> <span class="nb">all</span> <span class="n">variables</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Indicate</span> <span class="n">variables</span> <span class="k">with</span> <span class="n">missing</span> <span class="n">values</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Ask</span> <span class="k">if</span> <span class="n">I</span> <span class="n">want</span> <span class="n">to</span> <span class="n">impute</span> <span class="n">missing</span> <span class="n">values</span> <span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">median</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="ow">or</span> <span class="n">drop</span> <span class="n">rows</span><span class="o">/</span><span class="n">columns</span><span class="p">)</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Ask</span> <span class="k">if</span> <span class="n">I</span> <span class="n">want</span> <span class="n">to</span> <span class="n">sample</span> <span class="n">the</span> <span class="n">data</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">random</span> <span class="mi">10</span><span class="o">%</span><span class="p">,</span> <span class="n">stratified</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span><span class="p">)</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Ask</span> <span class="k">if</span> <span class="n">I</span> <span class="n">want</span> <span class="n">to</span> <span class="n">apply</span> <span class="n">feature</span> <span class="n">scaling</span> <span class="p">(</span><span class="n">z</span><span class="o">-</span><span class="n">score</span> <span class="ow">or</span> <span class="n">mn</span><span class="o">-</span><span class="nb">max</span><span class="p">)</span><span class="o">.</span>
+
+<span class="n">Once</span> <span class="n">I</span> <span class="n">confirm</span> <span class="n">the</span> <span class="n">options</span><span class="p">,</span> <span class="n">apply</span> <span class="n">them</span> <span class="ow">and</span> <span class="k">return</span> <span class="n">a</span> <span class="n">summary</span> <span class="n">of</span> <span class="n">changes</span> <span class="n">made</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="step-2-descriptive-data-analysis">
+<h3>Step 2: Descriptive Data Analysis<a class="headerlink" href="#step-2-descriptive-data-analysis" title="Link to this heading">#</a></h3>
+<p><strong>Prompt 2.1 – Summary Statistics</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Using</span> <span class="n">the</span> <span class="n">prepared</span> <span class="n">dataset</span><span class="p">,</span> <span class="n">calculate</span> <span class="ow">and</span> <span class="n">display</span> <span class="k">for</span> <span class="nb">all</span> <span class="n">numerical</span> <span class="n">variables</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Mean</span> <span class="ow">and</span> <span class="n">median</span>
+<span class="o">-</span> <span class="n">Standard</span> <span class="n">deviation</span><span class="p">,</span> <span class="nb">range</span><span class="p">,</span> <span class="n">interquartile</span> <span class="nb">range</span>
+<span class="o">-</span> <span class="n">Skewness</span> <span class="ow">and</span> <span class="n">kurtosis</span>
+<span class="n">For</span> <span class="n">the</span> <span class="n">categorical</span> <span class="n">variables</span> <span class="n">calculate</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Mode</span>
+<span class="o">-</span> <span class="n">Absolute</span> <span class="ow">and</span> <span class="n">relative</span> <span class="n">count</span> <span class="n">per</span> <span class="n">category</span> 
+
+<span class="n">Present</span> <span class="n">results</span> <span class="ow">in</span> <span class="n">one</span> <span class="ow">or</span> <span class="n">more</span> <span class="n">tables</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt 2.2 – Contingency Matrix</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Generate</span> <span class="n">contingency</span> <span class="n">tables</span> <span class="p">(</span><span class="n">cross</span><span class="o">-</span><span class="n">tabulations</span><span class="p">)</span> <span class="k">for</span> <span class="nb">all</span> <span class="n">discrete</span><span class="o">/</span><span class="n">categorical</span> <span class="n">variables</span> <span class="ow">in</span> <span class="n">relation</span> <span class="n">to</span> <span class="n">a</span> <span class="n">given</span> <span class="n">target</span> <span class="n">variable</span><span class="o">.</span> 
+
+<span class="n">Ask</span> <span class="n">me</span> <span class="n">to</span> <span class="n">specify</span> <span class="n">the</span> <span class="n">target</span> <span class="n">variable</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="s1">&#39;Churn&#39;</span><span class="p">,</span> <span class="s1">&#39;Outcome&#39;</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span><span class="p">)</span><span class="o">.</span> <span class="n">If</span> <span class="ow">not</span> <span class="n">specified</span><span class="p">,</span> <span class="n">identify</span> <span class="n">the</span> <span class="n">most</span> <span class="n">likely</span> <span class="n">one</span> <span class="n">automatically</span> <span class="n">based</span> <span class="n">on</span> <span class="n">cardinality</span> <span class="ow">and</span> <span class="n">naming</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="step-3-data-visualization">
+<h3>Step 3: Data Visualization<a class="headerlink" href="#step-3-data-visualization" title="Link to this heading">#</a></h3>
+<p><strong>Prompt 3.1 – Visualization Suite</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">dataset</span><span class="p">,</span> <span class="n">generate</span> <span class="n">the</span> <span class="n">following</span> <span class="n">recommended</span> <span class="n">visualizations</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Histogram</span> <span class="ow">or</span> <span class="n">boxplot</span> <span class="k">for</span> <span class="n">each</span> <span class="n">numerical</span> <span class="n">variable</span>
+<span class="o">-</span> <span class="n">Bar</span> <span class="n">chart</span> <span class="k">for</span> <span class="n">categorical</span> <span class="n">variable</span> <span class="n">frequencies</span>
+<span class="o">-</span> <span class="n">Pairplot</span> <span class="ow">or</span> <span class="n">correlation</span> <span class="n">heatmap</span> <span class="p">(</span><span class="k">if</span> <span class="n">more</span> <span class="n">than</span> <span class="mi">3</span> <span class="n">numerical</span> <span class="n">variables</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Prompt 3.2 – Exploring Visualizations</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Based on the dataset, recommend visuals that can potentially help me extract useful insights from the dataset and explain the recommendations.
+
+Also ask me the following:
+- Which plots would you like to see?
+- Do you want a downloadable file with all plots as images?
+</pre></div>
+</div>
+</section>
+<section id="step-4-data-storytelling-narrative">
+<h3>Step 4: Data Storytelling (Narrative)<a class="headerlink" href="#step-4-data-storytelling-narrative" title="Link to this heading">#</a></h3>
+<p><strong>Prompt 4.1 – Narrative Insights</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Help</span> <span class="n">me</span> <span class="n">create</span> <span class="n">a</span> <span class="n">data</span> <span class="n">storytelling</span> <span class="n">narrative</span> <span class="n">using</span> <span class="n">the</span> <span class="n">following</span> <span class="n">structure</span><span class="p">:</span>
+
+<span class="mf">1.</span> <span class="n">Audience</span> <span class="ow">and</span> <span class="n">Purpose</span><span class="p">:</span> <span class="n">Recommend</span> <span class="n">an</span> <span class="n">audience</span> <span class="ow">and</span> <span class="n">what</span> <span class="n">decision</span> <span class="ow">or</span> <span class="n">insight</span> <span class="n">they</span> <span class="n">seek</span><span class="o">.</span>
+<span class="mf">2.</span> <span class="n">Key</span> <span class="n">Message</span> <span class="ow">and</span> <span class="n">Depth</span><span class="p">:</span> <span class="n">Recommend</span> <span class="n">a</span> <span class="n">key</span> <span class="n">message</span> <span class="n">I</span> <span class="n">could</span> <span class="n">deliver</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">depth</span> <span class="n">of</span> <span class="n">analysis</span><span class="o">.</span>
+<span class="mf">3.</span> <span class="n">Narrative</span> <span class="n">Creation</span><span class="p">:</span> <span class="n">Based</span> <span class="n">on</span> <span class="n">previous</span> <span class="n">recommendations</span><span class="p">,</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">compelling</span> <span class="n">narrative</span> <span class="n">summarizing</span> <span class="n">the</span> <span class="n">findings</span><span class="p">,</span> <span class="n">patterns</span><span class="p">,</span> <span class="ow">and</span> <span class="n">implications</span> <span class="n">tailored</span> <span class="n">to</span> <span class="n">the</span> <span class="n">audience</span> <span class="ow">and</span> <span class="n">message</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt 4.2 – Narrative Framework</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Help</span> <span class="n">me</span> <span class="n">create</span> <span class="n">a</span> <span class="n">data</span> <span class="n">storytelling</span> <span class="n">narrative</span> <span class="n">using</span> <span class="n">the</span> <span class="n">following</span> <span class="n">structure</span><span class="p">:</span>
+
+<span class="mf">1.</span> <span class="n">Audience</span> <span class="ow">and</span> <span class="n">Purpose</span><span class="p">:</span> <span class="n">Ask</span> <span class="n">me</span> <span class="n">who</span> <span class="n">the</span> <span class="n">audience</span> <span class="ow">is</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">executives</span><span class="p">,</span> <span class="n">students</span><span class="p">,</span> <span class="n">clients</span><span class="p">)</span> <span class="ow">and</span> <span class="n">what</span> <span class="n">decision</span> <span class="ow">or</span> <span class="n">insight</span> <span class="n">they</span> <span class="n">seek</span><span class="o">.</span>
+<span class="mf">2.</span> <span class="n">Key</span> <span class="n">Message</span> <span class="ow">and</span> <span class="n">Depth</span><span class="p">:</span> <span class="n">Ask</span> <span class="k">for</span> <span class="n">the</span> <span class="n">key</span> <span class="n">message</span> <span class="n">I</span> <span class="n">want</span> <span class="n">to</span> <span class="n">deliver</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="s2">&quot;Revenue increased due to marketing efforts&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">depth</span> <span class="n">of</span> <span class="n">analysis</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">overview</span> <span class="n">vs</span> <span class="n">deep</span> <span class="n">dive</span><span class="p">)</span><span class="o">.</span>
+<span class="mf">3.</span> <span class="n">Narrative</span> <span class="n">Creation</span><span class="p">:</span> <span class="n">Based</span> <span class="n">on</span> <span class="n">previous</span> <span class="n">analysis</span><span class="p">,</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">compelling</span> <span class="n">narrative</span> <span class="n">summarizing</span> <span class="n">the</span> <span class="n">findings</span><span class="p">,</span> <span class="n">patterns</span><span class="p">,</span> <span class="ow">and</span> <span class="n">implications</span> <span class="n">tailored</span> <span class="n">to</span> <span class="n">the</span> <span class="n">audience</span> <span class="ow">and</span> <span class="n">message</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="step-5-dashboard-design">
+<h3>Step 5: Dashboard Design<a class="headerlink" href="#step-5-dashboard-design" title="Link to this heading">#</a></h3>
+<p><strong>Prompt 5.1 – Dashboard Planning</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Design</span> <span class="n">a</span> <span class="n">dashboard</span> <span class="k">for</span> <span class="n">this</span> <span class="n">dataset</span><span class="o">.</span> <span class="n">Ask</span> <span class="n">me</span> <span class="n">to</span> <span class="n">specify</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Preferred</span> <span class="n">tool</span> <span class="p">(</span><span class="n">Power</span> <span class="n">BI</span><span class="p">,</span> <span class="n">Tableau</span><span class="p">,</span> <span class="n">Python</span> <span class="n">Dash</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">Layout</span> <span class="n">preferences</span>
+<span class="o">-</span> <span class="n">Key</span> <span class="n">KPIs</span> <span class="ow">or</span> <span class="n">variables</span> <span class="n">to</span> <span class="n">highlight</span>
+<span class="o">-</span> <span class="n">Filters</span> <span class="ow">or</span> <span class="n">interactivity</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">time</span> <span class="n">filters</span><span class="p">,</span> <span class="n">segment</span> <span class="n">selection</span><span class="p">)</span>
+
+<span class="n">Then</span> <span class="n">suggest</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Dashboard</span> <span class="n">layout</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="mi">2</span><span class="n">x2</span> <span class="n">grid</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">Recommended</span> <span class="n">visualizations</span> <span class="n">per</span> <span class="n">section</span>
+<span class="o">-</span> <span class="n">Color</span> <span class="n">scheme</span> <span class="p">(</span><span class="n">light</span><span class="o">/</span><span class="n">dark</span><span class="p">,</span> <span class="n">branded</span> <span class="n">colors</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">Textual</span> <span class="n">elements</span> <span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">annotations</span><span class="p">)</span>
+
+<span class="n">Optionally</span><span class="p">,</span> <span class="n">generate</span> <span class="n">sample</span> <span class="n">code</span> <span class="ow">or</span> <span class="n">a</span> <span class="n">storyboard</span> <span class="n">sketch</span> <span class="k">if</span> <span class="n">Plotly</span> <span class="n">Dash</span> <span class="ow">is</span> <span class="n">selected</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Class4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Class 4: Data Storytelling and Dashboard Design</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-engineering-advancing-the-models">5.1 Prompt Engineering: Advancing the Models</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#small-llm-compatible-datasets-for-data-analysis-projects">5.2 Small, LLM-Compatible Datasets for Data Analysis Projects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis-workflow-prompt-chain">5.3 Data Analysis Workflow Prompt Chain</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-data-description-and-preparation">Step 1: Data Description and Preparation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-descriptive-data-analysis">Step 2: Descriptive Data Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-data-visualization">Step 3: Data Visualization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-data-storytelling-narrative">Step 4: Data Storytelling (Narrative)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-dashboard-design">Step 5: Dashboard Design</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
