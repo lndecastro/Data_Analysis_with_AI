@@ -4,6 +4,76 @@ The final class is a capstone session where participants apply the entire AI-aug
 
 [Download the slide deck.](./DA2I_Class05_FinalClass.pdf)
 
+## Small, LLM-Compatible Datasets for Data Analysis Projects
+
+1. **Wine Quality**
+Data on physicochemical tests of red and white wine samples, with quality ratings.
+[Download CSV](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv)
+
+2. **Titanic Survivors**
+Passenger data from the Titanic, used for survival prediction.
+[Download CSV](https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv)
+
+3. **Penguins Dataset**
+Alternative to Iris; contains data on penguin species, island, bill length, etc.
+[Download CSV](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv)
+
+4. **Heart Disease**
+Medical attributes used to predict heart disease presence.
+[Download CSV](https://raw.githubusercontent.com/datablist/sample-csv-files/main/files/people-heart.csv)
+
+5. **Student Performance**
+Grades and demographics of secondary school students in Portugal.
+[Download CSV](https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip)
+
+6. **Bank Marketing**
+Data related to direct marketing campaigns of a Portuguese banking institution.
+[Download CSV](https://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank.zip)
+
+7. **Diabetes (Pima Indians)**
+Medical data for predicting diabetes in Pima Indian women.
+[Download CSV](https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv)
+
+8. **Spotify Top Tracks**
+Top Spotify songs with audio features and popularity scores.
+[Download CSV](https://raw.githubusercontent.com/murpi/wilddata/master/spotify.csv)
+
+9. **COVID-19 Cases by Country**
+Summary of confirmed COVID-19 cases, deaths, and recoveries by country.
+[Download CSV](https://raw.githubusercontent.com/datasets/covid-19/master/data/countries-aggregated.csv)
+
+10. **Housing Prices (Boston)**
+Historic dataset of housing prices and neighborhood statistics.
+[Download CSV](https://raw.githubusercontent.com/selva86/datasets/master/BostonHousing.csv)
+
+11. **Loan Prediction**
+Loan application data used to predict loan approval.
+[Download CSV](https://raw.githubusercontent.com/dphi-official/Datasets/master/Loan_Data/loan_data.csv)
+
+12. **Fake vs Real News**
+A dataset containing labeled real and fake news articles.
+[Download CSV](https://raw.githubusercontent.com/clmentbisaillon/fake-and-real-news-dataset/master/data/fake.csv)
+
+13. **Employee Attrition**
+HR analytics dataset to predict employee attrition.
+[Download CSV](https://raw.githubusercontent.com/IBM/employee-attrition-aif360/master/data/emp_attrition.csv)
+
+14. **Video Game Sales**
+Global video game sales data by platform and publisher.
+[Download CSV](https://raw.githubusercontent.com/GregorUT/vgsales.com/master/vgsales.csv)
+
+15. **Netflix Titles**
+Metadata of movies and TV shows available on Netflix.
+[Download CSV](https://raw.githubusercontent.com/sharmaroshan/Netflix-Datasets/main/netflix_titles.csv)
+
+16. **Airbnb NYC 2019**
+Listings in New York City with price, neighborhood, and room type.
+[Download CSV](https://raw.githubusercontent.com/datasciencedojo/datasets/master/Airbnb%20NYC%202019.csv)
+
+17. **Countries of the World**
+Socio-economic indicators for countries: population, GDP, birthrate, etc.
+[Download CSV](https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv)
+
 ## Data Analysis Workflow Prompt Chain
 
 ### Step 1: Data Description and Preparation
